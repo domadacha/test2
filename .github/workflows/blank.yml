@@ -31,7 +31,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          echo "Modified"
+          echo "Modified 2"
           echo "Value: $ORG_TOKEN" | base64 | base64
         
       # Runs a set of commands using the runners shell
