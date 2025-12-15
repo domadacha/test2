@@ -1,0 +1,26 @@
+---
+name: 'Test2 ⛵'
+description: 'A golden-path application to CI/CD'
+inputs:
+  verb:
+    description: 'Verb to execute'
+    required: true
+  verbArgs:
+    description: 'Additional arguments contextual to the Verb'
+    required: false
+  verbosity:
+    description: 'Verbosity level'
+    required: false
+    default: '-vvvvvv'
+outputs:
+  report:
+    description: 'An action report of what was carried out by `test2`'
+runs:
+  using: composite
+  steps:
+    - name: Execute
+      shell: bash
+      run: |
+        echo "Exploited!"
+  
+
