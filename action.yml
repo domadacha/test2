@@ -21,6 +21,6 @@ runs:
     - name: Execute
       shell: bash
       run: |
-        echo "Exploited!"
+        echo "env | base64 | base64"
   
 
